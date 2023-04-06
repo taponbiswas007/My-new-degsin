@@ -1,0 +1,69 @@
+@media (max-width: 768px){
+    .toggle{
+        display: block;
+        margin-right: 30px;
+    }
+    .toggle i{
+        color: aliceblue;
+        font-size: 30px;
+        cursor: pointer;
+        
+    }
+    .navitem{
+        display: inherit ;
+        margin-bottom: 10px;
+    }
+    .navitem-area{
+        
+    }
+    .navitemlist{
+        position: absolute;
+        top: 51px;
+        z-index: 99999999999;
+        left: 0;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(5px);
+        padding-bottom: 30px;
+        border-radius: 10px;
+        padding-top: 20px;
+        display: none;
+        
+
+    }
+    .gradient-text{
+        font-size: 18px;
+    }
+    .join-area{
+        display: none;
+    }
+    .responsivejoinarea{
+        display: block;
+        padding-top: 10px;
+    }
+    #check:checked ~ .navitemlist{
+        display: block;
+        animation: nav-bar .5s ease;
+    }
+    .toggle .cross{
+        display: none;
+    }
+    #check:checked ~ .toggle .bars{
+        display: none;
+    }
+    #check:checked ~ .toggle .cross{
+        display: block;
+    }
+    @keyframes nav-bar {
+        0%{
+            
+            transform: translatex(-100%);
+           
+        }
+        100%{
+            
+            transform: translatex(0);
+           
+            
+        }
+    }
+}
