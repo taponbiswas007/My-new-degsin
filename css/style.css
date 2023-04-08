@@ -28,9 +28,11 @@ img{
 
 .header-area{
     background: url(../images/header-hero-bg.jpg) no-repeat 0 0 / 100% 100%;
+   
 }
 .header-mainarea{
     background: rgba(0,0,0,.5) ;
+    padding-bottom: 30px;
 }
 .navbar-area{
     padding-top: 30px;
@@ -51,6 +53,8 @@ img{
     width: 50px;
     background: #032d00;
     border-radius: 50%;
+    box-shadow: 0px 0px 12px 1px rgba(18,245,0,0.75);
+   
    
    
 }
@@ -134,8 +138,12 @@ img{
     background: rgba(255,255,255,0.1);
 }
 .hero-area{
-    margin-top: 30px;
+    padding-top: 30px;
     padding-bottom: 50px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin-top: 30px;
    
     
 }
@@ -143,6 +151,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
 }
 .owner-imagesbox{
     height: var(--owner-height);
@@ -150,6 +160,7 @@ img{
     overflow: hidden;
     position: relative;
     border-radius: 50%;
+    box-shadow: 0px 0px 12px 1px rgba(18,245,0,0.75);
 }
 .owner-imagesbox::after{
     content: ' ';
@@ -322,7 +333,12 @@ img{
     padding-top: 40px;
     padding-bottom: 40px;
  }
- .about-main-content{}
+ .about-main-content{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 30px 0;
+ }
  .about-main-content h1{
     font-size: 20px;
     text-transform: uppercase;
