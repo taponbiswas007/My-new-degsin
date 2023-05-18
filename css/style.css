@@ -52,6 +52,16 @@ img{
    
    
 }
+.logo-and-toggle{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.toggle{
+    font-size: 40px;
+    color: white;
+    display: none;
+}
 .navitemlist{
     margin-bottom: 0;
 }
